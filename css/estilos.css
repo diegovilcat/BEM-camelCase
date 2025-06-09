@@ -1,0 +1,72 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #436d97; 
+}
+
+/* Contenedor centrado */
+.contenedor {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #ffffff; 
+}
+
+
+.pagina__cabecera {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.pagina__titulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.metodologia {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.metodologia__titulo {
+    color: darkblue;
+    font-size: 20px;
+}
+
+.metodologia__imagen {
+    width: 500px;
+    height: 300px;
+    margin: 15px 0;
+    display: block;
+}
+
+.comparacion__titulo {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.comparacion {
+    background-color: #ffffff;        
+    border: 1px solid #ccc;           
+    border-radius: 10px;               
+    padding: 20px;                     
+    margin-bottom: 30px;               
+}
+
+.comparacion table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.comparacion th, .comparacion td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+}

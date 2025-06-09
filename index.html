@@ -1,12 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BEM y camelCase</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Investigación y aplicación de metodologías BEM y camelCase</h1>
-    
+    <div class="contenedor">
+        <header class="pagina__cabecera">
+            <h1 class="pagina__titulo">Metodologías de nombrado: BEM y camelCase</h1>
+            <p class="pagina__descripcion">Esta página explica qué son BEM y camelCase, sus usos y diferencias.</p>
+        </header>
+
+        <section class="metodologia metodologia--bem">
+            <h2 class="metodologia__titulo">¿Qué es BEM?</h2>
+            <p>BEM significa Block Element Modifier. Es una metodología para nombrar clases en CSS de forma organizada.</p>
+            <img src="imagenes/ejemplo-bem.png" alt="Ejemplo de BEM" class="metodologia__imagen">
+            <ol>
+                <li>Organiza mejor el código</li>
+                <li>Fácil de mantener</li>
+                <li>Evita conflictos de nombres</li>
+            </ol>
+
+            <ul>
+                <li>.boton</li>
+                <li>.boton__icono</li>
+                <li>.boton--grande</li>
+            </ul>
+        </section>
+
+        <section class="metodologia metodologia--camel">
+            <h2 class="metodologia__titulo">¿Qué es camelCase?</h2>
+            <p>camelCase es una forma de escribir nombres sin espacios, usando mayúsculas para separar palabras.</p>
+            <img src="imagenes/ejemplo-camelCase.png" alt="Ejemplo de camelCase" class="metodologia__imagen">
+            <ol>
+                <li>En JavaScript para nombres de variables</li>
+                <li>En funciones</li>
+                <li>En propiedades de objetos</li>
+            </ol>
+
+            <ul>
+                <li>miVariable</li>
+                <li>nombreCompleto</li>
+                <li>calcularEdad</li>
+            </ul>
+        </section>
+
+        <section class="comparacion">
+            <h2 class="comparacion__titulo">Comparación entre BEM y camelCase</h2>
+            <table border="1">
+                <tr>
+                    <th>Característica</th>
+                    <th>BEM</th>
+                    <th>camelCase</th>
+                </tr>
+                <tr>
+                    <td>Uso común</td>
+                    <td>CSS</td>
+                    <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Formato</td>
+                    <td>bloque__elemento--modificador</td>
+                    <td>nombreVariable</td>
+                </tr>
+                <tr>
+                    <td>Legibilidad</td>
+                    <td>Alta (estructura clara)</td>
+                    <td>Media (palabras unidas)</td>
+                </tr>
+                <tr>
+                    <td>Separadores</td>
+                    <td>Guiones bajos y dobles guiones</td>
+                    <td>Mayúsculas en medio de palabras</td>
+                </tr>
+                <tr>
+                    <td>Recomendado en</td>
+                    <td>Proyectos grandes con mucho CSS</td>
+                    <td>Funciones y variables en JS</td>
+                </tr>
+                <tr>
+                    <td>Facilidad para reutilizar código</td>
+                    <td>Alta (modificadores reutilizables)</td>
+                    <td>Baja (más enfocado a JS)</td>
+                </tr>
+                <tr>
+                    <td>Evita conflictos de nombres</td>
+                    <td>Sí</td>
+                    <td>No siempre</td>
+                </tr>
+            </table>
+            <p>Usa BEM para nombrar clases en CSS y camelCase para variables y funciones en JavaScript.</p>
+        </section>
+
+    </div>
 </body>
 </html>
